@@ -1,0 +1,25 @@
+{
+  "name": "backbone-forms-bootstrap-durationpicker",
+  "homepage": "https://github.com/tomi77/backbone-forms-bootstrap-durationpicker",
+  "description": "Backbone-Forms Bootstrap-durationpicker editor",
+  "main": "dist/bbf-bootstrap-durationpicker.js",
+  "keywords": [
+    "backbone-forms",
+    "bootstrap-durationpicker"
+  ],
+  "authors": [
+    "Tomasz Jakub Rup"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "src",
+    ".*",
+    "*.json"
+  ],
+  "dependencies": {
+    "backbone-forms": ">=0.9.0",
+    "bootstrap-durationpicker": "^1.0.0"
+  }
+}
