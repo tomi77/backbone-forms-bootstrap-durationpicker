@@ -2,6 +2,8 @@
 
 [![Code Climate](https://codeclimate.com/github/tomi77/backbone-forms-bootstrap-durationpicker/badges/gpa.svg)](https://codeclimate.com/github/tomi77/backbone-forms-bootstrap-durationpicker)
 
+A [Backbone-Forms](https://github.com/powmedia/backbone-forms) editor that covers [Bootstrap-durationpicker](http://bilbous.github.io/bootstrap-durationpicker) functionality.
+
 ## Installation
 
     bower install backbone-forms-bootstrap-durationpicker
