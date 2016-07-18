@@ -26,7 +26,7 @@
   Form.editors['bootstrap.DurationPicker'] = Text.extend({
     initialize: function(options) {
       Text.prototype.initialize.call(this, options);
-      this.editorOptions = options.editorOptions || {};
+      this.editorOptions = options.schema.editorOptions || {};
     },
     render: function() {
       Text.prototype.render.call(this);

@@ -25,7 +25,7 @@
     initialize: (options) ->
       Text::initialize.call @, options
 
-      @editorOptions = options.editorOptions or {}
+      @editorOptions = options.schema.editorOptions or {}
       return
 
     render: () ->
