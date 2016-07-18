@@ -22,3 +22,7 @@
       model: model
 
     @$el.html form.render().$el
+
+## Demo
+
+https://tomi77.github.io/backbone-forms-bootstrap-durationpicker/
