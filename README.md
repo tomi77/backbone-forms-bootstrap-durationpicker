@@ -6,24 +6,28 @@ A [Backbone-Forms](https://github.com/powmedia/backbone-forms) editor that cover
 
 ## Installation
 
-    bower install backbone-forms-bootstrap-durationpicker
+~~~bash
+bower install backbone-forms-bootstrap-durationpicker
+~~~
 
 ## Usage
 
-    Model = Backbone.Model.extend
-      schema:
-        duration:
-          type: 'bootstrap.DurationPicker'
-          label: 'Duration'
-          editorOptions:
-            showSeconds: true
+~~~coffee-script
+Model = Backbone.Model.extend
+  schema:
+    duration:
+      type: 'bootstrap.DurationPicker'
+      label: 'Duration'
+      editorOptions:
+        showSeconds: true
 
-    model = new Model()
+model = new Model()
 
-    form = new Backbone.Form
-      model: model
+form = new Backbone.Form
+  model: model
 
-    @$el.html form.render().$el
+@$el.html form.render().$el
+~~~
 
 ## Demo
 
