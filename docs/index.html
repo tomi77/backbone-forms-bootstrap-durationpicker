@@ -1,0 +1,37 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Backbone-Forms typeahead.js editor example</title><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone-forms/0.14.0/backbone-forms.min.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.js"></script><script type="text/javascript" src="bootstrap-durationpicker.js"></script><script type="text/javascript" src="bbf-bootstrap-durationpicker.js"></script><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css"><link rel="stylesheet" href="bootstrap-durationpicker.css"><script type="text/javascript">var example = function () {
+    var Model = Backbone.Model.extend({
+        schema: {
+            duration: {
+                type: 'bootstrap.DurationPicker',
+                title: 'Duration',
+                editorOptions: {
+                    showSeconds: true
+                }
+            }
+        }
+    });
+    var model = new Model();
+    var form = new Backbone.Form({
+        model: model
+    });
+    $('#form').html(form.render().$el);
+};
+document.addEventListener("DOMContentLoaded", example, false);
+window.addEventListener("load", example, false);</script></head><body><!--nav.navbar-static-top.container
+  ul.nav.pull-left
+    li: a.btn(href="index.html") With seconds--><div class="container"><h3>Example:</h3><div id="form"></div><h3>Code:</h3><pre>var Model = Backbone.Model.extend({
+    schema: {
+        duration: {
+            type: 'bootstrap.DurationPicker',
+            title: 'Duration',
+            editorOptions: {
+                showSeconds: true
+            }
+        }
+    }
+});
+var model = new Model();
+var form = new Backbone.Form({
+    model: model
+});
+$('#form').html(form.render().$el);</pre></div></body></html>

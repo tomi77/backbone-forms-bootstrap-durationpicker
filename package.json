@@ -4,12 +4,14 @@
   "dependencies": {},
   "devDependencies": {
     "coffee-script": "^1.10.0",
+    "pug-cli": "^1.0.0-alpha6",
     "uglify-js": "^2.7.0"
   },
   "scripts": {
     "build": "npm run build-js; npm run uglify",
     "build-js": "coffee --bare --compile --no-header --output dist src/bbf-bootstrap-durationpicker.coffee",
-    "uglify": "uglifyjs dist/bbf-bootstrap-durationpicker.js --output dist/bbf-bootstrap-durationpicker.min.js --compress --mangle"
+    "uglify": "uglifyjs dist/bbf-bootstrap-durationpicker.js --output dist/bbf-bootstrap-durationpicker.min.js --compress --mangle",
+    "build-docs": "pug --out docs templates/*.pug"
   },
   "repository": {
     "type": "git",
